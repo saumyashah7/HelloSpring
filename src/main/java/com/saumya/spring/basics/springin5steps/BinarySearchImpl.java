@@ -9,11 +9,17 @@ public class BinarySearchImpl {
 	@Autowired
 	private SortAlgorithm sa;
 	
-	
-	public BinarySearchImpl(SortAlgorithm sa) {
+	//constructor injection
+	/*public BinarySearchImpl(SortAlgorithm sa) {
 		super();
 		this.sa = sa;
-	}
+	} */
+	
+	//setter injection
+
+//	public void setSa(SortAlgorithm sa) {
+//		this.sa = sa;
+//	}
 
 
 	public int binarySearch(int[] nums, int n) 
@@ -23,5 +29,7 @@ public class BinarySearchImpl {
 		
 		return 0;
 	}
+
+	
 
 }
